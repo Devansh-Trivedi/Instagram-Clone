@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+a{
+  color: black !important;
+}
+
+.brand-logo,h2{
+  font-family: 'Grand Hotel', cursive;
+}
+
+.mycard{
+  margin-top: 30px;
+}
+.auth-card{
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid rgb(8, 93, 252) !important;
+  box-shadow: 0 1px 0 0 rgb(8, 93, 252)  !important;
+}
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid rgb(8, 93, 252) !important;
+  box-shadow: 0 1px 0 0 rgb(8, 93, 252)  !important;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item{
+  width: 30%;
+}
+
+.home-card{
+  max-width: 500px;
+  height: max-content;
+  margin: 26px auto;
+  
+}
+.collection-item{
+  width: 100%;
+}
+
+
+#toast-container{
+  top:30px !important;
+  right: 20px !important;
+  left: auto !important;
+}
+
+
+.material-icons:hover{
+  cursor: pointer;
+}
+
+
+/* dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+}
+.dropdown ul {
+  list-style-type: none;
+  /* margin: auto;
+  padding: auto; */
+  top:45px;
+  right:0px;
+  width: 180px;
+  background-color: rgb(255, 255, 255);
+  font-weight:bold;
+  position: absolute;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown li a {
+  color: #000;
+  text-decoration: none;
+  width: 180px;
+}
+.dropdown li {
+  /* padding: 0px 8px; */
+  border-bottom: 1px solid #ffffff;
+  width: 130px;
+}
+.dropdown li:last-child {
+  border-bottom: none;
+}
+.dropdown li:hover {
+  background-color: #ffffff;
+  color: white;
+}
+.dropdown .button{
+  width:20px;
+  height:40px;
+  background-color:#ffffff ;
+  padding-top: -10px;
+  /* align-items: center; */
+  
+  /* border-radius:20px; */
+  font-weight:bold;
+  color:rgb(0, 0, 0) !important;
+}
+.dropdown .button:before{
+  content:"";
+  position:relative;
+  width:0px;
+  height:0px;
+  border: 10px solid;
+  border-color: rgb(0, 0, 0) transparent transparent transparent;
+  right:-4px;
+  top:-2px;
+}
+
+.flexbox-container {
+  display:flex;
+  flex-direction: row;
+  margin-right:15px;
+  padding-left: 15px;
+  padding-bottom: -15px;
+}
+
+
+.sideRow{
+  
+}
+
+.row {
+  margin-bottom: 0px !important;
+}
+
+/* loader */
+body{
+	background: #EEE;
+}
+.loader {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 12;
+}
+.backgroundAnimation {
+    height: 4px;
+    background: #27c4f5 -webkit-gradient(linear,left top, right top,from(#27c4f5),color-stop(#a307ba),color-stop(#fd8d32),color-stop(#70c050),to(#27c4f5));
+    background: #27c4f5 linear-gradient(to right,#27c4f5,#a307ba,#fd8d32,#70c050,#27c4f5);
+    background-size: 500%;
+    -webkit-animation: 2s linear infinite barprogress,.3s fadein;
+    animation: 2s linear infinite barprogress,.3s fadein;
+    width: 100%;
+}
+@-webkit-keyframes barprogress {
+    0% {
+        background-position: 0% 0
+    }
+    to {
+        background-position: 125% 0
+    }
+}
+@keyframes barprogress {
+    0% {
+        background-position: 0% 0
+    }
+    to {
+        background-position: 125% 0
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+body.dark-mode {
+  background-color: #1a1919;
+  color: #999;
+}
